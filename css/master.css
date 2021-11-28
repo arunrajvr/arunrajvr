@@ -5967,12 +5967,21 @@ ul {
   display: flex;
   align-items: center;
   padding: 35px 45px; }
+  @media screen and (max-width: 767px) {
+    .aj-navbar {
+      padding: 20px 15px; } }
   .aj-navbar .logo img {
     height: 35px; }
   .aj-navbar .aj-contact {
     margin-left: 105px; }
+    @media screen and (max-width: 767px) {
+      .aj-navbar .aj-contact {
+        margin-left: 20px; } }
     .aj-navbar .aj-contact ul {
       display: flex; }
+      @media screen and (max-width: 767px) {
+        .aj-navbar .aj-contact ul {
+          display: none; } }
       .aj-navbar .aj-contact ul li {
         margin-right: 15px;
         color: #fff; }
@@ -6001,11 +6010,19 @@ ul {
     font-family: Graphik;
     font-weight: 400;
     line-height: 105px; }
+    @media screen and (max-width: 767px) {
+      .banner-content h1 {
+        font-size: 45px;
+        line-height: 60px; } }
 
 .banner-project-details {
   display: flex;
   align-items: center;
   margin-top: 30px; }
+  @media screen and (max-width: 767px) {
+    .banner-project-details {
+      flex-direction: column;
+      align-items: flex-start; } }
   .banner-project-details .count-holder {
     display: flex;
     align-items: center;
@@ -6015,6 +6032,10 @@ ul {
     padding: 10px 15px;
     max-width: 215px;
     margin-right: 20px; }
+    @media screen and (max-width: 767px) {
+      .banner-project-details .count-holder {
+        margin-right: 0;
+        margin-bottom: 20px; } }
     .banner-project-details .count-holder .count {
       font-family: Graphik;
       font-size: 40px;
