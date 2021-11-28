@@ -5,14 +5,69 @@
     <meta charset="utf-8">
     <title>i'm arunraj.</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
+    <link href='css/master.css' rel='stylesheet' type='text/css'>
     <meta name="theme-color" content="#222" />
 </head>
 
 <body>
-    <h2>I'm arunraj</h2>
-</body>
+    <header>
+        <div class="aj-navbar">
+            <div class="logo">
+                <img src="images/logo-white.png" alt="">
+            </div>
+            <div class="aj-contact">
+                <ul>
+                    <li><a href="tel:+91 7406560667">+91 7406560667</a></li>
+                    <li class="sep">/</li>
+                    <li><a href="mailto:arunrajvr77@gmail.com">arunrajvr77@gmail.com</a></li>
+                </ul>
+            </div>
+            <div class="aj-burger"></div>
+        </div>
+    </header>
+    <div class="main-banner">
+        <div class="pattern wow slideInLeft"></div>
+        <div class="circle-pattern wow slideInRight"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                    <div class="banner-content">
+                        <h5>Arunraj VR</h5>
+                        <h1>I’m UI Designer & Developer</h1>
+                    </div>
+                    <div class="banner-project-details">
+                        <div class="count-holder">
+                            <span class="count">30<sup>+</sup></span>
+                            <span class="count-label">Completed Projects</span>
+                        </div>
+                        <div class="count-holder">
+                            <span class="count">50<sup>+</sup></span>
+                            <span class="count-label">Satisfied Clients</span>
+                        </div>
+                    </div>
+                    <div class="download-resume">
+                        <a class="transition-fast" target="_blank" href="./images/Arunraj_UI-Developer.pdf">View Resume</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                   
+                </div>
+            </div>
+        </div>
+    </div>
 
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="plugin/bootstrap/javascripts/bootstrap.min.js"></script>
+    <script src="plugin/animate/js/wow.min.js"></script>
+    <script>
+        $(window).load(function() {
+            var viewportWidth = $(window).width();
+            if (viewportWidth > 767) {
+                new WOW().init();
+            }
+        });
+    </script>
 </html>
 
 </html>
