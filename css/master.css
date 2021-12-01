@@ -5931,32 +5931,44 @@ ul {
   -o-transition: all ease-out .2s;
   transition: all ease-out 0.2s; }
 
+.bg-white {
+  background-color: #fff; }
+
+.bg-black {
+  background-image: url("../images/black-bg.jpeg");
+  background-position: center;
+  background-size: cover; }
+
+.pattern {
+  background-image: url("../images/plus-dark-pattern.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 256px;
+  height: 208px;
+  position: absolute; }
+
+.circle-pattern {
+  background-image: url("../images/elipse-home-slide.png");
+  width: 75vw;
+  height: 75vw;
+  background-size: cover;
+  position: absolute; }
+
 .main-banner {
   background-image: url("../images/black-background.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 100vh;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  padding: 150px 0; }
   .main-banner .pattern {
-    background-image: url("../images/plus-dark-pattern.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 256px;
-    height: 208px;
-    position: absolute;
     left: 0;
     top: 0; }
   .main-banner .circle-pattern {
-    background-image: url("../images/elipse-home-slide.png");
     bottom: -28vw;
-    left: 50vw;
-    width: 75vw;
-    height: 75vw;
-    background-size: cover;
-    position: absolute; }
+    left: 50vw; }
 
 .aj-navbar {
   position: absolute;
@@ -5996,24 +6008,22 @@ ul {
           font-weight: 300;
           text-transform: uppercase; }
 
-.banner-content {
-  margin-top: 150px; }
-  .banner-content h5 {
-    font-size: 14px;
-    color: #fff;
-    text-transform: uppercase;
-    font-family: Graphik;
-    font-weight: 300; }
-  .banner-content h1 {
-    font-size: 85px;
-    color: #fff;
-    font-family: Graphik;
-    font-weight: 400;
-    line-height: 105px; }
-    @media screen and (max-width: 767px) {
-      .banner-content h1 {
-        font-size: 45px;
-        line-height: 60px; } }
+.banner-content h5 {
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: Graphik;
+  font-weight: 300; }
+.banner-content h1 {
+  font-size: 85px;
+  color: #fff;
+  font-family: Graphik;
+  font-weight: 400;
+  line-height: 105px; }
+  @media screen and (max-width: 767px) {
+    .banner-content h1 {
+      font-size: 45px;
+      line-height: 60px; } }
 
 .banner-project-details {
   display: flex;
@@ -6078,5 +6088,97 @@ ul {
       padding-left: 75px; }
       .download-resume a:hover::before {
         width: 60px; }
+
+.common-section {
+  padding: 50px 0;
+  position: relative;
+  overflow: hidden; }
+  .common-section .pattern {
+    left: auto;
+    right: 0;
+    top: 0; }
+  .common-section .circle-pattern {
+    bottom: -28vw;
+    right: 50vw;
+    left: auto; }
+
+.aj-experiance-holder h3 {
+  font-size: 24px;
+  font-family: Graphik;
+  color: #222;
+  font-weight: 400;
+  letter-spacing: -1px;
+  display: block; }
+  .aj-experiance-holder h3 .years-count {
+    font-size: 80px;
+    font-family: Graphik;
+    color: #c3323a;
+    font-weight: 600;
+    letter-spacing: -1px;
+    display: block;
+    margin-bottom: 20px; }
+    .aj-experiance-holder h3 .years-count sup {
+      font-size: 40px;
+      font-weight: 400;
+      position: relative;
+      top: -35px; }
+
+.content-holder .section-title {
+  margin-bottom: 35px; }
+  .content-holder .section-title h2 {
+    font-size: 26px;
+    font-family: Graphik;
+    color: #222;
+    font-weight: 400;
+    letter-spacing: -1px;
+    margin-bottom: 15px; }
+  .content-holder .section-title p {
+    font-size: 18px;
+    font-family: Graphik;
+    color: #666;
+    font-weight: 300;
+    letter-spacing: -.5px; }
+.content-holder .sub-section .title h3 {
+  font-size: 22px;
+  font-family: Graphik;
+  color: #222;
+  font-weight: 400;
+  letter-spacing: -1px;
+  margin-bottom: 15px; }
+.content-holder .sub-section .title p {
+  font-size: 16px;
+  font-family: Graphik;
+  color: #666;
+  font-weight: 300;
+  letter-spacing: -.5px; }
+
+.bg-black .content-holder .section-title {
+  margin-bottom: 35px; }
+  .bg-black .content-holder .section-title h2 {
+    color: #fff; }
+
+.experience-table-holder .table tbody tr:first-child th, .experience-table-holder .table tbody tr:first-child td {
+  border-top: none; }
+.experience-table-holder .table tbody tr th, .experience-table-holder .table tbody tr td {
+  padding: 30px 0;
+  border-color: #333; }
+.experience-table-holder .table .year {
+  font-size: 16px;
+  font-family: Graphik;
+  color: #fff;
+  font-weight: 300;
+  letter-spacing: -.5px; }
+.experience-table-holder .table .role {
+  font-size: 20px;
+  font-family: Graphik;
+  color: #fff;
+  font-weight: 300;
+  letter-spacing: -.5px; }
+.experience-table-holder .table .company {
+  font-size: 16px;
+  font-family: Graphik;
+  color: #858585;
+  font-weight: 300;
+  letter-spacing: -.5px; }
 
 /*# sourceMappingURL=master.css.map */
