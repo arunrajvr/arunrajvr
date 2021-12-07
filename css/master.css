@@ -5875,27 +5875,27 @@ button.close {
 
 /*ripple*/
 @font-face {
-  font-family: Graphik;
+  font-family: Graphik-thin;
   font-weight: 100;
   src: url("../fonts/Graphik/Graphik-Thin.otf") format("opentype"); }
 @font-face {
-  font-family: Graphik;
+  font-family: Graphik-light;
   font-weight: 200;
   src: url("../fonts/Graphik/Graphik-Light.otf") format("opentype"); }
 @font-face {
-  font-family: Graphik;
+  font-family: Graphik-regular;
   font-weight: 300;
   src: url("../fonts/Graphik/Graphik-Regular.otf") format("opentype"); }
 @font-face {
-  font-family: Graphik;
+  font-family: Graphik-medium;
   font-weight: 400;
   src: url("../fonts/Graphik/Graphik-Medium.otf") format("opentype"); }
 @font-face {
-  font-family: Graphik;
+  font-family: Graphik-semibold;
   font-weight: 500;
   src: url("../fonts/Graphik/Graphik-Semibold.otf") format("opentype"); }
 @font-face {
-  font-family: Graphik;
+  font-family: Graphik-bold;
   font-weight: 600;
   src: url("../fonts/Graphik/Graphik-Bold.otf") format("opentype"); }
 .container-medium {
@@ -5934,6 +5934,15 @@ ul {
 .bg-white {
   background-color: #fff; }
 
+.bg-dark-red {
+  background-color: #8a171a; }
+
+.bg-dark-grey {
+  background-color: #181818; }
+
+.bg-dark-blue {
+  background-color: #013067; }
+
 .bg-black {
   background-image: url("../images/black-bg.jpeg");
   background-position: center;
@@ -5963,6 +5972,9 @@ ul {
   position: relative;
   overflow: hidden;
   padding: 150px 0; }
+  @media screen and (max-width: 767px) {
+    .main-banner {
+      padding: 100px 0; } }
   .main-banner .pattern {
     left: 0;
     top: 0; }
@@ -6004,7 +6016,7 @@ ul {
         .aj-navbar .aj-contact ul li a {
           color: #fff;
           font-size: 14px;
-          font-family: Graphik;
+          font-family: Graphik-light;
           font-weight: 300;
           text-transform: uppercase; }
 
@@ -6012,14 +6024,14 @@ ul {
   font-size: 14px;
   color: #fff;
   text-transform: uppercase;
-  font-family: Graphik;
+  font-family: Graphik-light;
   font-weight: 300; }
 .banner-content h1 {
   font-size: 85px;
   color: #fff;
-  font-family: Graphik;
-  font-weight: 400;
-  line-height: 105px; }
+  font-family: Graphik-semibold;
+  line-height: 105px;
+  letter-spacing: -1px; }
   @media screen and (max-width: 767px) {
     .banner-content h1 {
       font-size: 45px;
@@ -6047,17 +6059,15 @@ ul {
         margin-right: 0;
         margin-bottom: 20px; } }
     .banner-project-details .count-holder .count {
-      font-family: Graphik;
+      font-family: Graphik-regular;
       font-size: 40px;
       color: #fff;
-      font-weight: 400;
       letter-spacing: -1px;
       margin-right: 15px; }
     .banner-project-details .count-holder .count-label {
-      font-family: Graphik;
+      font-family: Graphik-light;
       font-size: 14px;
       color: #fff;
-      font-weight: 300;
       margin-right: 15px;
       letter-spacing: 1px;
       text-transform: uppercase; }
@@ -6067,8 +6077,7 @@ ul {
   .download-resume a {
     color: #fff;
     font-size: 20px;
-    font-family: Graphik;
-    font-weight: 300;
+    font-family: Graphik-light;
     position: relative;
     padding-left: 65px; }
     .download-resume a::before {
@@ -6093,92 +6102,176 @@ ul {
   padding: 50px 0;
   position: relative;
   overflow: hidden; }
-  .common-section .pattern {
+  .common-section .pattern.right {
     left: auto;
     right: 0;
     top: 0; }
-  .common-section .circle-pattern {
+  .common-section .circle-pattern.left {
     bottom: -28vw;
     right: 50vw;
     left: auto; }
+  .common-section .pattern.left {
+    left: 0;
+    top: 0; }
+  .common-section .circle-pattern.right {
+    bottom: -28vw;
+    left: 50vw; }
 
 .aj-experiance-holder h3 {
   font-size: 24px;
-  font-family: Graphik;
+  font-family: Graphik-regular;
   color: #222;
-  font-weight: 400;
   letter-spacing: -1px;
   display: block; }
+  @media screen and (max-width: 767px) {
+    .aj-experiance-holder h3 {
+      display: flex;
+      align-items: center;
+      margin-bottom: 25px; } }
   .aj-experiance-holder h3 .years-count {
     font-size: 80px;
-    font-family: Graphik;
+    font-family: Graphik-bold;
     color: #c3323a;
-    font-weight: 600;
     letter-spacing: -1px;
     display: block;
     margin-bottom: 20px; }
+    @media screen and (max-width: 767px) {
+      .aj-experiance-holder h3 .years-count {
+        margin-bottom: 0px;
+        font-size: 70px;
+        line-height: 68px;
+        padding-right: 25px; } }
     .aj-experiance-holder h3 .years-count sup {
       font-size: 40px;
-      font-weight: 400;
+      font-family: Graphik-regular;
       position: relative;
       top: -35px; }
+      @media screen and (max-width: 767px) {
+        .aj-experiance-holder h3 .years-count sup {
+          top: -32px; } }
 
 .content-holder .section-title {
   margin-bottom: 35px; }
+  @media screen and (max-width: 767px) {
+    .content-holder .section-title {
+      margin-bottom: 0; } }
   .content-holder .section-title h2 {
     font-size: 26px;
-    font-family: Graphik;
+    font-family: Graphik-regular;
     color: #222;
-    font-weight: 400;
     letter-spacing: -1px;
     margin-bottom: 15px; }
   .content-holder .section-title p {
     font-size: 18px;
-    font-family: Graphik;
-    color: #666;
-    font-weight: 300;
-    letter-spacing: -.5px; }
+    font-family: Graphik-light;
+    color: #666; }
+@media screen and (max-width: 767px) {
+  .content-holder .sub-section .title {
+    margin-bottom: 25px; } }
 .content-holder .sub-section .title h3 {
   font-size: 22px;
-  font-family: Graphik;
+  font-family: Graphik-regular;
   color: #222;
-  font-weight: 400;
   letter-spacing: -1px;
   margin-bottom: 15px; }
 .content-holder .sub-section .title p {
   font-size: 16px;
-  font-family: Graphik;
-  color: #666;
-  font-weight: 300;
-  letter-spacing: -.5px; }
+  font-family: Graphik-light;
+  color: #666; }
 
 .bg-black .content-holder .section-title {
   margin-bottom: 35px; }
   .bg-black .content-holder .section-title h2 {
     color: #fff; }
 
-.experience-table-holder .table tbody tr:first-child th, .experience-table-holder .table tbody tr:first-child td {
-  border-top: none; }
-.experience-table-holder .table tbody tr th, .experience-table-holder .table tbody tr td {
-  padding: 30px 0;
-  border-color: #333; }
-.experience-table-holder .table .year {
-  font-size: 16px;
-  font-family: Graphik;
-  color: #fff;
-  font-weight: 300;
-  letter-spacing: -.5px; }
-.experience-table-holder .table .role {
-  font-size: 20px;
-  font-family: Graphik;
-  color: #fff;
-  font-weight: 300;
-  letter-spacing: -.5px; }
-.experience-table-holder .table .company {
-  font-size: 16px;
-  font-family: Graphik;
-  color: #858585;
-  font-weight: 300;
-  letter-spacing: -.5px; }
+.experience-table-holder .table {
+  margin-bottom: 0; }
+  @media screen and (max-width: 767px) {
+    .experience-table-holder .table tbody tr {
+      border-top: 1px solid #333;
+      padding: 30px 0;
+      display: block; } }
+  @media screen and (max-width: 767px) {
+    .experience-table-holder .table tbody tr:first-child {
+      border-top: none;
+      padding-top: 0; } }
+  .experience-table-holder .table tbody tr:first-child th, .experience-table-holder .table tbody tr:first-child td {
+    border-top: none; }
+  @media screen and (max-width: 767px) {
+    .experience-table-holder .table tbody tr:last-child {
+      padding-bottom: 0; } }
+  .experience-table-holder .table tbody tr th, .experience-table-holder .table tbody tr td {
+    padding: 30px 0;
+    border-color: #333; }
+    @media screen and (max-width: 767px) {
+      .experience-table-holder .table tbody tr th, .experience-table-holder .table tbody tr td {
+        display: block;
+        padding: 0;
+        border-top: none; } }
+  .experience-table-holder .table .year {
+    font-size: 16px;
+    font-family: Graphik-light;
+    color: #fff; }
+  .experience-table-holder .table .role {
+    font-size: 20px;
+    font-family: Graphik-light;
+    color: #fff; }
+  .experience-table-holder .table .company {
+    font-size: 16px;
+    font-family: Graphik-light;
+    color: #858585; }
+
+.project-card {
+  border-radius: 6px;
+  padding: 40px;
+  box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.1);
+  position: relative;
+  bottom: 0; }
+  @media screen and (max-width: 767px) {
+    .project-card {
+      padding: 25px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 25px; } }
+  .project-card:hover {
+    bottom: 3px; }
+  .project-card .project-image {
+    text-align: center;
+    margin-bottom: 40px; }
+    @media screen and (max-width: 767px) {
+      .project-card .project-image {
+        margin-bottom: 0; } }
+    .project-card .project-image img {
+      max-width: 100%; }
+      @media screen and (max-width: 767px) {
+        .project-card .project-image img {
+          max-width: 75px; } }
+  @media screen and (max-width: 767px) {
+    .project-card .content {
+      padding-left: 15px; } }
+  .project-card .content h6 {
+    font-size: 14px;
+    font-family: Graphik-light;
+    color: #fff;
+    margin-bottom: 5px;
+    text-transform: uppercase; }
+  .project-card .content h3 {
+    font-size: 22px;
+    font-family: Graphik-semibold;
+    color: #fff;
+    text-transform: uppercase; }
+
+@media screen and (max-width: 767px) {
+  .aj-project-details .col-xs-12:last-child .project-card {
+    margin-bottom: 0; } }
+
+footer {
+  background-color: #181818;
+  padding: 10px; }
+  footer p {
+    text-align: center;
+    font-family: Graphik-light;
+    font-size: 12px;
+    color: #666; }
 
 /*# sourceMappingURL=master.css.map */
