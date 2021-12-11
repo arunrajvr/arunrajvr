@@ -5943,6 +5943,9 @@ ul {
 .bg-dark-blue {
   background-color: #013067; }
 
+.bg-indigo {
+  background-color: #089cfa; }
+
 .bg-black {
   background-image: url("../images/black-bg.jpeg");
   background-position: center;
@@ -6099,7 +6102,7 @@ ul {
         width: 60px; }
 
 .common-section {
-  padding: 50px 0;
+  padding: 100px 0;
   position: relative;
   overflow: hidden; }
   .common-section .pattern.right {
