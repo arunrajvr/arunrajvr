@@ -6132,8 +6132,8 @@ ul {
       align-items: center;
       margin-bottom: 25px; } }
   .aj-experiance-holder h3 .years-count {
-    font-size: 80px;
-    font-family: Graphik-bold;
+    font-size: 100px;
+    font-family: Graphik-regular;
     color: #c3323a;
     letter-spacing: -1px;
     display: block;
@@ -6148,7 +6148,7 @@ ul {
       font-size: 40px;
       font-family: Graphik-regular;
       position: relative;
-      top: -35px; }
+      top: -49px; }
       @media screen and (max-width: 767px) {
         .aj-experiance-holder h3 .years-count sup {
           top: -32px; } }
