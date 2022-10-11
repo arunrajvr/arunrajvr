@@ -6287,7 +6287,7 @@ footer {
     }
     .j{
       position: relative;
-      animation: j_slide_up 0.5s ease-out;
+      animation: j_slide_up 1s ease-out;
     }
     .j .dot{
       position: absolute;
@@ -6298,8 +6298,6 @@ footer {
       background-color: #be2b29;
       border-radius: 20px;
       opacity: 1;
-      animation: dot 0.5s ease-out;
-      animation-delay: 1s;
     }
     .j .j-line{
       position: absolute;
@@ -6328,19 +6326,8 @@ footer {
       width: 25px;
       background-color: #be2b29;
       border-bottom-left-radius: 20px;
-      animation: a_line 0.5s ease-out;
+      animation: a_line 1s ease-out;
       animation-iteration-count: 1;
-    }
-    
-    @keyframes dot {
-      0% {
-        right: 40px;
-        opacity: 0;
-        }
-      100% {
-        right: 68px;
-        opacity: 1;
-        }
     }
     
     @keyframes a_line {
