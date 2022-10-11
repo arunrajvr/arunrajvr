@@ -5038,29 +5038,6 @@ button.list-group-item-danger {
   padding: 9px;
   border-radius: 3px; }
 
-.close {
-  float: right;
-  font-size: 21px;
-  font-weight: bold;
-  line-height: 1;
-  color: #000;
-  text-shadow: 0 1px 0 #fff;
-  opacity: 0.2;
-  filter: alpha(opacity=20); }
-  .close:hover, .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-    opacity: 0.5;
-    filter: alpha(opacity=50); }
-
-button.close {
-  padding: 0;
-  cursor: pointer;
-  background: transparent;
-  border: 0;
-  -webkit-appearance: none; }
-
 .modal-open {
   overflow: hidden; }
 
@@ -6278,12 +6255,12 @@ footer {
     color: #666; }
 
     .a-logo-holder{
-      width: 101px;
-      height: 139px;
+      width: 298px;
+      height: 415px;
       position: relative;
+      top: 45px;
       overflow: hidden;
-      transform: scale(3.5);
-      transform-origin: top left;
+      transform-origin: center;
     }
     .j{
       position: relative;
@@ -6291,51 +6268,51 @@ footer {
     }
     .j .dot{
       position: absolute;
-      top: 10px;
-      right: 68px;
-      width: 25px;
-      height: 25px;
+      top: 0;
+      left: 0;
+      width: 88px;
+      height: 88px;
       background-color: #be2b29;
-      border-radius: 20px;
+      border-radius: 88px;
       opacity: 1;
     }
     .j .j-line{
       position: absolute;
-      top: 10px;
-      left: 38px;
-      width: 55px;
-      height: 25px;
+      top: 0;
+      right: 0;
+      width: 193px;
+      height: 88px;
       background-color: #be2b29;
-      border-top-right-radius: 20px;
+      border-top-right-radius: 88px;
     }
     .a .circle{
-      width: 85px;
-      height: 85px;
-      border: 25px solid #be2b29;
-      border-radius: 100px;
+      width: 298px;
+      height: 298px;
+      border: 88px solid #be2b29;
+      border-radius: 100%;
       box-sizing: border-box;
       position: absolute;
-      bottom: 11px;
-      left: 8px;
+      bottom: 0;
+      left: 0;
     }
     .a .a-line{
       position: absolute;
-      top: 88px;
-      right: 8px;
-      height: 39px;
-      width: 25px;
+      bottom: 0;
+      right: 0;
+      height: 141px;
+      width: 88px;
       background-color: #be2b29;
-      border-bottom-left-radius: 20px;
+      border-bottom-left-radius: 88px;
       animation: a_line 1s ease-out;
       animation-iteration-count: 1;
     }
     
     @keyframes a_line {
       0% {
-        height: 0;
+        bottom: 17px;
         }
       100% {
-        height: 39px;
+        bottom: 0;
         }
     }
     @keyframes j_slide_up {
