@@ -6277,4 +6277,88 @@ footer {
     font-size: 12px;
     color: #666; }
 
+    .a-logo-holder{
+      width: 101px;
+      height: 139px;
+      position: relative;
+      overflow: hidden;
+      transform: scale(3.5);
+      transform-origin: top left;
+    }
+    .j{
+      position: relative;
+      animation: j_slide_up 0.5s ease-out;
+    }
+    .j .dot{
+      position: absolute;
+      top: 10px;
+      right: 68px;
+      width: 25px;
+      height: 25px;
+      background-color: #be2b29;
+      border-radius: 20px;
+      opacity: 1;
+      animation: dot 0.5s ease-out;
+      animation-delay: 1s;
+    }
+    .j .j-line{
+      position: absolute;
+      top: 10px;
+      left: 38px;
+      width: 55px;
+      height: 25px;
+      background-color: #be2b29;
+      border-top-right-radius: 20px;
+    }
+    .a .circle{
+      width: 85px;
+      height: 85px;
+      border: 25px solid #be2b29;
+      border-radius: 100px;
+      box-sizing: border-box;
+      position: absolute;
+      bottom: 11px;
+      left: 8px;
+    }
+    .a .a-line{
+      position: absolute;
+      top: 88px;
+      right: 8px;
+      height: 39px;
+      width: 25px;
+      background-color: #be2b29;
+      border-bottom-left-radius: 20px;
+      animation: a_line 0.5s ease-out;
+      animation-iteration-count: 1;
+    }
+    
+    @keyframes dot {
+      0% {
+        right: 40px;
+        opacity: 0;
+        }
+      100% {
+        right: 68px;
+        opacity: 1;
+        }
+    }
+    
+    @keyframes a_line {
+      0% {
+        height: 0;
+        }
+      100% {
+        height: 39px;
+        }
+    }
+    @keyframes j_slide_up {
+      0% {
+        opacity: 0;
+        top:30px
+        }
+      100% {
+        opacity: 1;
+        top:0;
+        }
+    }
 /*# sourceMappingURL=master.css.map */
